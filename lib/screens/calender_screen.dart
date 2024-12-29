@@ -127,17 +127,6 @@ class _CalendarScreenState extends State<CalendarScreen> {
                           ),
                         ],
                       ),
-                      // Padding(
-                      //   padding: const EdgeInsets.symmetric(vertical: 16),
-                      //   child: Text(
-                      //     "فعاليات يوم (١٩ يناير ٢٠٢٤)",
-                      //     style: TextStyle(
-                      //         fontFamily: AppFonts.primaryFontFamily,
-                      //         fontSize: 16,
-                      //         fontWeight: FontWeight.bold,
-                      //         color: AppColors.color3f4857),
-                      //   ),
-                      // ),
                       FavCard(
                         head: "موسم الرياض ٢٠٢٤",
                         subHead: "لمدة اسبوعين  - ١٢ اكتوبر٢٠٢٤",

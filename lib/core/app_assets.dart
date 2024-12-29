@@ -29,4 +29,5 @@ class AppAssets {
   static String notificationIc = "${imagesPath}bell_icon.png";
   static String phoneIc = "${imagesPath}phone_icon.png";
   static String whatsappIc = "${imagesPath}whatsapp_icon.png";
+  static String starIc = "${imagesPath}star_icon.png";
 }
