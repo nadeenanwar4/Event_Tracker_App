@@ -111,55 +111,58 @@ class _CalendarScreenState extends State<CalendarScreen> {
                         ),
                       ),
                       Calendar(isMonthView: isMonthView),
-                      //SizedBox(height: 16,),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                        child: Text(
-                          "فعاليات يوم (١٩ يناير ٢٠٢٤)",
-                          style: TextStyle(
-                              fontFamily: AppFonts.primaryFontFamily,
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: AppColors.color3f4857),
-                        ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 24),
+                            child: Text(
+                              "فعاليات يوم (١٩ يناير ٢٠٢٤)",
+                              style: TextStyle(
+                                  fontFamily: AppFonts.primaryFontFamily,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: AppColors.color3f4857),
+                            ),
+                          ),
+                        ],
                       ),
-                      // SingleChildScrollView(
-                      //   scrollDirection: Axis.vertical,
-                      //   child: Column(
-                      //     textDirection: TextDirection.rtl,
-                      //     children: [
-                      //       FavCard(
-                      //           head: "موسم الرياض ٢٠٢٤",
-                      //           subHead: "لمدة اسبوعين  - ١٢ اكتوبر٢٠٢٤",
-                      //           imgPath: AppAssets.festivalImg,
-                      //           iconPath: AppAssets.calenderIc,
-                      //           width: 361,
-                      //           height: 285),
-                      //       FavCard(
-                      //           head: "لحظات العلا",
-                      //           subHead: "لمدة اسبوعين  - ١٢ اكتوبر٢٠٢٤",
-                      //           imgPath: AppAssets.desertImg,
-                      //           iconPath: AppAssets.calenderIc,
-                      //           width: 361,
-                      //           height: 285),
-                      //     ],
+                      // Padding(
+                      //   padding: const EdgeInsets.symmetric(vertical: 16),
+                      //   child: Text(
+                      //     "فعاليات يوم (١٩ يناير ٢٠٢٤)",
+                      //     style: TextStyle(
+                      //         fontFamily: AppFonts.primaryFontFamily,
+                      //         fontSize: 16,
+                      //         fontWeight: FontWeight.bold,
+                      //         color: AppColors.color3f4857),
                       //   ),
                       // ),
-
                       FavCard(
-                          head: "موسم الرياض ٢٠٢٤",
-                          subHead: "لمدة اسبوعين  - ١٢ اكتوبر٢٠٢٤",
-                          imgPath: AppAssets.festivalImg,
-                          iconPath: AppAssets.calenderIc,
-                          width: 361,
-                          height: 285),
+                        head: "موسم الرياض ٢٠٢٤",
+                        subHead: "لمدة اسبوعين  - ١٢ اكتوبر٢٠٢٤",
+                        imgPath: AppAssets.festivalImg,
+                        aboveIconPath: AppAssets.heartIc,
+                        belowIconPath: AppAssets.calenderIc,
+                        width: 361,
+                        height: 285,
+                        smallContwidth: 345,
+                        smallContheight: 70,
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
                       FavCard(
-                          head: "لحظات العلا",
-                          subHead: "لمدة اسبوعين  - ١٢ اكتوبر٢٠٢٤",
-                          imgPath: AppAssets.desertImg,
-                          iconPath: AppAssets.calenderIc,
-                          width: 361,
-                          height: 285),
+                        head: "لحظات العلا",
+                        subHead: "لمدة اسبوعين  - ١٢ اكتوبر٢٠٢٤",
+                        imgPath: AppAssets.desertImg,
+                        aboveIconPath: AppAssets.heartIc,
+                        belowIconPath: AppAssets.calenderIc,
+                        width: 361,
+                        height: 285,
+                        smallContwidth: 345,
+                        smallContheight: 70,
+                      ),
                     ],
                   ),
                 ),

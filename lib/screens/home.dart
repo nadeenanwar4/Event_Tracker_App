@@ -19,6 +19,12 @@ class Home extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        // bottomNavigationBar: NavigationBar(
+        //   destinations: [
+
+        // ],
+        // ),
+
         //column of whole screen
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
@@ -42,13 +48,22 @@ class Home extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            IconButton(
-                                onPressed: () {},
-                                icon: const Icon(
-                                  Icons.circle_notifications_rounded,
-                                  color: AppColors.searchBarColor,
-                                  size: 46,
-                                )),
+                            Container(
+                              width: 46,
+                              height: 46,
+                              decoration: BoxDecoration(
+                                color: AppColors.colorF8F8F8,
+                                borderRadius: BorderRadius.circular(50),
+                              ),
+                              child: IconButton(
+                                  onPressed: () {},
+                                  icon: Image.asset(
+                                    AppAssets.notificationIc,
+                                    width: 24,
+                                    height: 24,
+                                    color: AppColors.color3f4857,
+                                  )),
+                            ),
                             Padding(
                               padding: const EdgeInsets.only(top: 16),
 
@@ -86,7 +101,8 @@ class Home extends StatelessWidget {
                           child: TextField(
                               textAlign: TextAlign.right,
                               decoration: InputDecoration(
-                                fillColor: AppColors.searchBarColor,
+                                filled: true,
+                                fillColor: AppColors.colorF8F8F8,
                                 suffixIcon: const Icon(
                                   Icons.search_outlined,
                                   size: 20,
@@ -166,33 +182,48 @@ class Home extends StatelessWidget {
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       FavCard(
                         imgPath: AppAssets.motorImg,
+                        aboveIconPath: AppAssets.heartIc,
                         head: "جمان كارتنج للترفيه المليء بالتشويق",
                         subHead: "مدينة الملك عبدالله الاقتصادية | الترفيه ",
-                        iconPath: AppAssets.markerIc,
+                        belowIconPath: AppAssets.markerIc,
                         width: 310,
                         height: 256,
+                        smallContwidth: 294,
+                        smallContheight: 72,
+                      ),
+                      const SizedBox(
+                        width: 16,
                       ),
                       FavCard(
                         imgPath: AppAssets.desertImg,
+                        aboveIconPath: AppAssets.heartIc,
                         head: "رحلة تخييم وسفاري في صحراء الرياض",
                         subHead: "الرياض | الترفيه ",
-                        iconPath: AppAssets.markerIc,
+                        belowIconPath: AppAssets.markerIc,
                         width: 310,
                         height: 256,
+                        smallContwidth: 294,
+                        smallContheight: 72,
+                      ),
+                      const SizedBox(
+                        width: 16,
                       ),
                       FavCard(
                         imgPath: AppAssets.motorImg,
+                        aboveIconPath: AppAssets.heartIc,
                         head: "جمان كارتنج للترفيه المليء بالتشويق",
                         subHead: "مدينة الملك عبدالله الاقتصادية | الترفيه ",
-                        iconPath: AppAssets.markerIc,
+                        belowIconPath: AppAssets.markerIc,
                         width: 310,
                         height: 256,
+                        smallContwidth: 294,
+                        smallContheight: 72,
                       ),
                     ],
                   ),
@@ -233,33 +264,48 @@ class Home extends StatelessWidget {
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       FavCard(
                         imgPath: AppAssets.motorImg,
+                        aboveIconPath: AppAssets.heartIc,
                         head: "جمان كارتنج للترفيه المليء بالتشويق",
                         subHead: "مدينة الملك عبدالله الاقتصادية | الترفيه ",
-                        iconPath: AppAssets.markerIc,
+                        belowIconPath: AppAssets.markerIc,
                         width: 310,
                         height: 256,
+                        smallContwidth: 294,
+                        smallContheight: 72,
+                      ),
+                      const SizedBox(
+                        width: 16,
                       ),
                       FavCard(
                         imgPath: AppAssets.desertImg,
+                        aboveIconPath: AppAssets.heartIc,
                         head: "رحلة تخييم وسفاري في صحراء الرياض",
                         subHead: "الرياض | الترفيه ",
-                        iconPath: AppAssets.markerIc,
+                        belowIconPath: AppAssets.markerIc,
                         width: 310,
                         height: 256,
+                        smallContwidth: 294,
+                        smallContheight: 72,
+                      ),
+                      const SizedBox(
+                        width: 16,
                       ),
                       FavCard(
                         imgPath: AppAssets.motorImg,
+                        aboveIconPath: AppAssets.heartIc,
                         head: "جمان كارتنج للترفيه المليء بالتشويق",
                         subHead: "مدينة الملك عبدالله الاقتصادية | الترفيه ",
-                        iconPath: AppAssets.markerIc,
+                        belowIconPath: AppAssets.markerIc,
                         width: 310,
                         height: 256,
+                        smallContwidth: 294,
+                        smallContheight: 72,
                       ),
                     ],
                   ),

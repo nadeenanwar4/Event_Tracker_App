@@ -8,8 +8,6 @@ class CustomTextFormField extends StatelessWidget {
   String hintTxt;
   Image? iconImg;
 
-  //String? initValue;
-
   bool isObsecure;
   CustomTextFormField(
       {required this.controller,
@@ -28,7 +26,7 @@ class CustomTextFormField extends StatelessWidget {
       decoration: InputDecoration(
         filled: true,
         fillColor: AppColors.whiteColor,
-        floatingLabelBehavior: FloatingLabelBehavior.always,
+        //floatingLabelBehavior: FloatingLabelBehavior.always,
         hintText: hintTxt,
         hintStyle: TextStyle(
           fontSize: 14,

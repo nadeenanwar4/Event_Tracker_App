@@ -25,4 +25,6 @@ class AppAssets {
   static String googleIc = "${imagesPath}google_image.png";
   static String passIc = "${imagesPath}password_icon.png";
   static String reloadIc = "${imagesPath}reload_icon.png";
+  static String trashIc = "${imagesPath}trash_icon.png";
+  static String notificationIc = "${imagesPath}bell_icon.png";
 }
