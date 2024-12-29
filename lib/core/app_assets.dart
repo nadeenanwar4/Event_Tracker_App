@@ -27,4 +27,6 @@ class AppAssets {
   static String reloadIc = "${imagesPath}reload_icon.png";
   static String trashIc = "${imagesPath}trash_icon.png";
   static String notificationIc = "${imagesPath}bell_icon.png";
+  static String phoneIc = "${imagesPath}phone_icon.png";
+  static String whatsappIc = "${imagesPath}whatsapp_icon.png";
 }

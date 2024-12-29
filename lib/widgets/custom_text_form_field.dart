@@ -7,6 +7,7 @@ class CustomTextFormField extends StatelessWidget {
   TextInputType? keyboardType;
   String hintTxt;
   Image? iconImg;
+  int maxLines;
 
   bool isObsecure;
   CustomTextFormField(
@@ -15,6 +16,7 @@ class CustomTextFormField extends StatelessWidget {
       required this.hintTxt,
       this.isObsecure = false,
       this.iconImg,
+      this.maxLines = 1,
       super.key});
 
   @override
@@ -23,10 +25,10 @@ class CustomTextFormField extends StatelessWidget {
       controller: controller,
       keyboardType: keyboardType,
       textAlign: TextAlign.end,
+      maxLines: maxLines,
       decoration: InputDecoration(
         filled: true,
         fillColor: AppColors.whiteColor,
-        //floatingLabelBehavior: FloatingLabelBehavior.always,
         hintText: hintTxt,
         hintStyle: TextStyle(
           fontSize: 14,

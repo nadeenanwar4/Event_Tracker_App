@@ -27,23 +27,19 @@ class FavCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // decoration: BoxDecoration(
-      //   borderRadius: BorderRadius.circular(16),
-      // ),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16),
+      ),
       width: width,
       height: height,
       child: Stack(
         children: [
           Positioned.fill(
             child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                //color: Colors.red,
                 child: Image.asset(
-                  imgPath,
-                  fit: BoxFit.fill,
-                )),
+              imgPath,
+              fit: BoxFit.fill,
+            )),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
