@@ -8,12 +8,12 @@ class AppAssets {
   static String imagesPath = "assets/images/";
 
   //======================== Icons Path ======================
-  static String campIc = "${imagesPath}camp_icon.svg";
-  static String beachIc = "${imagesPath}beach_icon.svg";
-  static String entertainIc = "${imagesPath}entertaining_icon.svg";
-  static String horseRideIc = "${imagesPath}horse_icon.svg";
-  static String partyIc = "${imagesPath}party_icon.svg";
-  static String sportsIc = "${imagesPath}sport_icon.svg";
+  static String campIc = "${imagesPath}camp_icon.png";
+  static String beachIc = "${imagesPath}beach_icon.png";
+  static String entertainIc = "${imagesPath}entertaining_icon.png";
+  static String horseRideIc = "${imagesPath}horse_icon.png";
+  static String partyIc = "${imagesPath}party_icon.png";
+  static String sportsIc = "${imagesPath}sport_icon.png";
   //static String campIc = "${imagesPath}camp_icon.svg";
   static String activityIc = "${imagesPath}activity_icon.png";
   static String motorImg = "${imagesPath}big_img1.png";

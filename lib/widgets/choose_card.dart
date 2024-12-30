@@ -42,29 +42,31 @@ class _ChooseCardState extends State<ChooseCard> {
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                //crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  SvgPicture.asset(
-                    widget.iconPath,
-                    width: 48,
-                    height: 48,
-                    //color: imageColor,
-                    theme: SvgTheme(
-                      currentColor: imageColor,
-                    ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 24),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        widget.iconPath,
+                        width: 48,
+                        height: 48,
+                        color: imageColor,
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      CustomizedText(
+                          txt: widget.iconText,
+                          fontSize: 16,
+                          txtColor: txtColor,
+                          fontFamily: AppFonts.primaryFontFamily,
+                          fontWeight: FontWeight.bold)
+                    ],
                   ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  CustomizedText(
-                      txt: widget.iconText,
-                      fontSize: 16,
-                      txtColor: txtColor,
-                      fontFamily: AppFonts.primaryFontFamily,
-                      fontWeight: FontWeight.bold)
-                ],
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
