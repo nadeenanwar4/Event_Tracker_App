@@ -19,6 +19,7 @@ class AppAssets {
   static String motorImg = "${imagesPath}big_img1.png";
   static String desertImg = "${imagesPath}big_img2.png";
   static String festivalImg = "${imagesPath}big_img3.png";
+  static String carousalImg = "${imagesPath}carousal_image.png";
   static String heartIc = "${imagesPath}heart.png";
   static String markerIc = "${imagesPath}marker.png";
   static String calenderIc = "${imagesPath}calendar_icon.png";
@@ -30,4 +31,8 @@ class AppAssets {
   static String phoneIc = "${imagesPath}phone_icon.png";
   static String whatsappIc = "${imagesPath}whatsapp_icon.png";
   static String starIc = "${imagesPath}star_icon.png";
+  static String profileIc = "${imagesPath}user_icon.png";
+  static String homeIc = "${imagesPath}home_icon.png";
+  static String eventsIc = "${imagesPath}events_icon.png";
+  static String calendarNavBarIc = "${imagesPath}calendar_nav_bar_icon.png";
 }

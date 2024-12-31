@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_task1/core/app_fonts.dart';
 import 'package:ui_task1/widgets/customized_text.dart';
-import 'package:ui_task1/widgets/otp_frame.dart';
-import '../core/app_assets.dart';
 import '../core/app_colors.dart';
 import '../widgets/custom_text_form_field.dart';
 import '../widgets/mainButton.dart';

@@ -4,7 +4,6 @@ import 'package:ui_task1/core/app_colors.dart';
 import 'package:ui_task1/widgets/activity_card.dart';
 import 'package:ui_task1/widgets/customized_text.dart';
 import 'package:ui_task1/widgets/fav_card.dart';
-
 import '../core/app_fonts.dart';
 
 void main() {
@@ -19,32 +18,24 @@ class Home extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        // bottomNavigationBar: NavigationBar(
-        //   destinations: [
-
-        // ],
-        // ),
-
+        backgroundColor: AppColors.colorF8F8F8,
         //column of whole screen
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
               // top search card
-
               Container(
                 width: double.infinity,
                 height: 170,
                 child: Card(
+                  color: AppColors.whiteColor,
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(8, 24, 8, 8),
-
                     //column that contain both row of top bar and the search bar below them
-
                     child: Column(
                       children: [
                         // row that contains both headings and notification icon
-
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -64,31 +55,25 @@ class Home extends StatelessWidget {
                                     color: AppColors.color3f4857,
                                   )),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 16),
-
-                              // column that contain the 2 headings
-
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.end,
-                                children: [
-                                  CustomizedText(
-                                      txt: "! مرحبا بك",
-                                      fontSize: 16,
-                                      txtColor: AppColors.color182335,
-                                      fontFamily: AppFonts.primaryFontFamily,
-                                      fontWeight: FontWeight.bold),
-                                  const SizedBox(
-                                    height: 10,
-                                  ),
-                                  CustomizedText(
-                                      txt: " إبحث عن مغامرتك الآن",
-                                      fontSize: 16,
-                                      txtColor: AppColors.color797F8A,
-                                      fontFamily: AppFonts.primaryFontFamily,
-                                      fontWeight: FontWeight.normal),
-                                ],
-                              ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                CustomizedText(
+                                    txt: "! مرحبا بك",
+                                    fontSize: 16,
+                                    txtColor: AppColors.color182335,
+                                    fontFamily: AppFonts.primaryFontFamily,
+                                    fontWeight: FontWeight.bold),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                CustomizedText(
+                                    txt: " إبحث عن مغامرتك الآن",
+                                    fontSize: 16,
+                                    txtColor: AppColors.color797F8A,
+                                    fontFamily: AppFonts.primaryFontFamily,
+                                    fontWeight: FontWeight.normal),
+                              ],
                             ),
                           ],
                         ),
@@ -134,7 +119,6 @@ class Home extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 padding: EdgeInsets.all(8),
                 child: Row(
-                  //mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     ActivityCard(text: " المغامرات"),
                     const SizedBox(
@@ -158,15 +142,12 @@ class Home extends StatelessWidget {
                   color: AppColors.color1A404D,
                   size: 20,
                 ),
-                title: Transform.translate(
-                  offset: Offset(-24, 0),
-                  child: CustomizedText(
-                    txt: "عرض المزيد",
-                    fontFamily: AppFonts.secondryFontFamily,
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                    txtColor: AppColors.color1A404D,
-                  ),
+                title: CustomizedText(
+                  txt: "عرض المزيد",
+                  fontFamily: AppFonts.secondryFontFamily,
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  txtColor: AppColors.color1A404D,
                 ),
                 trailing: CustomizedText(
                   txt: "فعاليات الشهر الحالي",
@@ -185,6 +166,7 @@ class Home extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    //textDirection: TextDirection.rtl,
                     children: [
                       FavCard(
                         imgPath: AppAssets.motorImg,
@@ -238,15 +220,12 @@ class Home extends StatelessWidget {
                   color: AppColors.color1A404D,
                   size: 20,
                 ),
-                title: Transform.translate(
-                  offset: Offset(-24, 0),
-                  child: CustomizedText(
-                    txt: "عرض المزيد",
-                    fontFamily: AppFonts.secondryFontFamily,
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                    txtColor: AppColors.color1A404D,
-                  ),
+                title: CustomizedText(
+                  txt: "عرض المزيد",
+                  fontFamily: AppFonts.secondryFontFamily,
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  txtColor: AppColors.color1A404D,
                 ),
                 trailing: CustomizedText(
                   txt: "أبرز الفعاليات",
