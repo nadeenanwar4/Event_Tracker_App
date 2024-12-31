@@ -56,7 +56,7 @@ class BottomNavBar extends StatelessWidget {
         activeColorSecondary: AppColors.whiteColor,
       ),
       PersistentBottomNavBarItem(
-        icon: Image.asset(AppAssets.profileIc),
+        icon: Image.asset(AppAssets.userIc),
         iconSize: 24,
         title: "حسابي",
         textStyle: TextStyle(

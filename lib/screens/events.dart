@@ -17,6 +17,7 @@ class Events extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: AppColors.colorF8F8F8,
         body: SingleChildScrollView(
           child: Column(
             children: [

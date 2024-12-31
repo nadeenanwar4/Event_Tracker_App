@@ -31,6 +31,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: AppColors.colorF8F8F8,
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
