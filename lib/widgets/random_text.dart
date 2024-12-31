@@ -4,14 +4,15 @@ import '../core/app_fonts.dart';
 
 class ActivityText extends StatelessWidget {
   String text;
-  ActivityText({required this.text, super.key});
+  Color txtColor;
+  ActivityText({required this.text, required this.txtColor, super.key});
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
       style: TextStyle(
-        color: AppColors.color182335,
+        color: txtColor,
         fontFamily: AppFonts.secondryFontFamily,
         fontSize: 14,
         fontWeight: FontWeight.normal,
