@@ -31,8 +31,15 @@ class AppAssets {
   static String phoneIc = "${imagesPath}phone_icon.png";
   static String whatsappIc = "${imagesPath}whatsapp_icon.png";
   static String starIc = "${imagesPath}star_icon.png";
-  static String profileIc = "${imagesPath}user_icon.png";
+  static String userIc = "${imagesPath}user_icon.png";
   static String homeIc = "${imagesPath}home_icon.png";
   static String eventsIc = "${imagesPath}events_icon.png";
   static String calendarNavBarIc = "${imagesPath}calendar_nav_bar_icon.png";
+  static String cloudShareIc = "${imagesPath}cloud-share_icon.png";
+  static String envelopeIc = "${imagesPath}envelope_icon.png";
+  static String followIc = "${imagesPath}following_icon.png";
+  static String globeIc = "${imagesPath}globe_icon.png";
+  static String profileIc = "${imagesPath}profile_icon.png";
+  static String signOutIc = "${imagesPath}sign-out_icon.png";
+  static String unlockIc = "${imagesPath}unlock_icon.png";
 }
