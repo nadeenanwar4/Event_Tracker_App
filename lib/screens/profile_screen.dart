@@ -58,65 +58,69 @@ class Profile extends StatelessWidget {
               child: ListView.builder(
                 itemCount: 9,
                 itemBuilder: (context, index) {
-                  return CustomizedListTile(
-                    title: titleStrings()[index],
-                    titleTxtStyle: TextStyle(
-                        fontFamily: AppFonts.primaryFontFamily,
-                        fontSize: 16,
-                        fontWeight: FontWeight.normal,
-                        color: AppColors.color3f4857),
-                    leadIconPath: leadIconsPathes()[index],
-                    radius: 4,
-                    trailing: index == 7
-                        ? SizedBox(
-                            width: 80,
-                            height: 24,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Container(
-                                  width: 34,
-                                  height: 24,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: AppColors.color41606B,
-                                  ),
-                                  child: Text(
-                                    "AR",
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: AppFonts.thirdFontFamily,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal,
-                                      color: AppColors.whiteColor,
+                  return Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 2, 16, 2),
+                    child: CustomizedListTile(
+                      title: titleStrings()[index],
+                      titleTxtStyle: TextStyle(
+                          fontFamily: AppFonts.primaryFontFamily,
+                          fontSize: 16,
+                          fontWeight: FontWeight.normal,
+                          color: AppColors.color3f4857),
+                      leadIconPath: leadIconsPathes()[index],
+                      radius: 4,
+                      trailing: index == 7
+                          ? SizedBox(
+                              width: 80,
+                              height: 24,
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
+                                    width: 34,
+                                    height: 24,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: AppColors.color41606B,
+                                    ),
+                                    child: Text(
+                                      "AR",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: AppFonts.thirdFontFamily,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                        color: AppColors.whiteColor,
+                                      ),
                                     ),
                                   ),
-                                ),
-                                SizedBox(
-                                  width: 12,
-                                ),
-                                Container(
-                                  width: 34,
-                                  height: 24,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: AppColors.colorE8E9EB,
+                                  SizedBox(
+                                    width: 12,
                                   ),
-                                  child: Text(
-                                    "EN",
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: AppFonts.thirdFontFamily,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal,
-                                      color: AppColors.color182335,
+                                  Container(
+                                    width: 34,
+                                    height: 24,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: AppColors.colorE8E9EB,
+                                    ),
+                                    child: Text(
+                                      "EN",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: AppFonts.thirdFontFamily,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                        color: AppColors.color182335,
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
-                            ),
-                          )
-                        : Icon(Icons.keyboard_arrow_left_rounded),
+                                ],
+                              ),
+                            )
+                          : Icon(Icons.keyboard_arrow_left_rounded),
+                    ),
                   );
                 },
               ),
