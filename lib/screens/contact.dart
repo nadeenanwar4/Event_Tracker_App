@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:ui_task1/core/app_assets.dart';
 import 'package:ui_task1/core/app_colors.dart';
 import 'package:ui_task1/core/app_fonts.dart';

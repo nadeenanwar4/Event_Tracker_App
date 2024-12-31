@@ -67,7 +67,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
                               ),
                               style: ElevatedButton.styleFrom(
                                   fixedSize: Size(139, 33),
-                                  primary: AppColors.whiteColor,
+                                  backgroundColor: AppColors.whiteColor,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(50),
                                     side: BorderSide(
@@ -97,7 +97,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
                               ),
                               style: ElevatedButton.styleFrom(
                                   fixedSize: Size(150, 33),
-                                  primary: AppColors.whiteColor,
+                                  backgroundColor: AppColors.whiteColor,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(50),
                                     side: BorderSide(

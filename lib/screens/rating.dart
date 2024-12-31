@@ -13,7 +13,7 @@ void main() {
 }
 
 class RatingScreen extends StatefulWidget {
-  RatingScreen({super.key});
+  const RatingScreen({super.key});
 
   @override
   State<RatingScreen> createState() => _RatingScreenState();
