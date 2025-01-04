@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ui_task1/core/app_assets.dart';
-import 'package:ui_task1/core/app_colors.dart';
+import 'package:ui_task1/core/app_textstyles.dart';
 import 'package:ui_task1/widgets/choose_card.dart';
-import 'package:ui_task1/widgets/mainButton.dart';
+import 'package:ui_task1/widgets/mainbutton.dart';
 
 void main() {
   runApp(Recommendations());
@@ -24,16 +24,11 @@ class Recommendations extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Text(
+              Text(
                 "إختر النشاطات التي تهمك",
                 textAlign: TextAlign.center,
                 textDirection: TextDirection.rtl,
-                style: TextStyle(
-                  fontWeight: FontWeight.w600,
-                  fontSize: 24,
-                  fontFamily: "Rubik", //AppAssets.primaryFontFamily ??,
-                  color: AppColors.color3f4857,
-                ),
+                style: TextStyles.primary24SemiBold3f4857,
               ),
               const SizedBox(
                 height: 40,

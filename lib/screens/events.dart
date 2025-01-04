@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_task1/core/app_assets.dart';
 import 'package:ui_task1/core/app_colors.dart';
+import 'package:ui_task1/core/app_textstyles.dart';
 import 'package:ui_task1/widgets/activity_card.dart';
 import 'package:ui_task1/widgets/custom_app_bar.dart';
 import 'package:ui_task1/widgets/fav_card.dart';
@@ -80,12 +81,7 @@ class Events extends StatelessWidget {
                           ),
                           hintText: "السبت  2 نوفمبر - الاثنين  4 نوفمبر",
                           hintStyle: WidgetStateProperty.all<TextStyle?>(
-                            TextStyle(
-                              fontSize: 12.0,
-                              color: AppColors
-                                  .color182335, // Change this to the appropriate color
-                              fontWeight: FontWeight.w400,
-                            ),
+                            TextStyles.primary12Normal182335,
                           ),
                           trailing: [
                             Image.asset(

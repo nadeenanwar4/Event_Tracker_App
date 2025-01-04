@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_task1/core/app_assets.dart';
 import 'package:ui_task1/core/app_colors.dart';
 import 'package:ui_task1/core/app_fonts.dart';
+import 'package:ui_task1/core/app_textstyles.dart';
 import 'package:ui_task1/widgets/custom_app_bar.dart';
 import 'package:ui_task1/widgets/custom_list_tile.dart';
 
@@ -87,12 +88,7 @@ class Profile extends StatelessWidget {
                                     child: Text(
                                       "AR",
                                       textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        fontFamily: AppFonts.thirdFontFamily,
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.normal,
-                                        color: AppColors.whiteColor,
-                                      ),
+                                      style: TextStyles.third14NormalWhite,
                                     ),
                                   ),
                                   SizedBox(
@@ -108,12 +104,7 @@ class Profile extends StatelessWidget {
                                     child: Text(
                                       "EN",
                                       textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        fontFamily: AppFonts.thirdFontFamily,
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.normal,
-                                        color: AppColors.color182335,
-                                      ),
+                                      style: TextStyles.third14NormalWhite,
                                     ),
                                   ),
                                 ],

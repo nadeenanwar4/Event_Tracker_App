@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ui_task1/core/app_assets.dart';
 import 'package:ui_task1/core/app_colors.dart';
-import 'package:ui_task1/widgets/customized_text.dart';
-
-import '../core/app_fonts.dart';
+import 'package:ui_task1/core/app_textstyles.dart';
 
 class CustomizedAppBar extends StatelessWidget {
   String screenHeading;
@@ -42,27 +39,16 @@ class CustomizedAppBar extends StatelessWidget {
                         size: 16,
                         color: AppColors.color007aff,
                       )),
-                  CustomizedText(
-                      txt: "تمييز كمقروء",
-                      fontSize: 14,
-                      txtColor: AppColors.color007aff,
-                      fontFamily: AppFonts.secondryFontFamily,
-                      fontWeight: FontWeight.normal),
+                  Text(
+                    "تمييز كمقروء",
+                    style: TextStyles.secondary14Normal007aff,
+                  ),
                 ],
               ),
-
-            CustomizedText(
-              txt: screenHeading,
-              fontSize: 16,
-              txtColor: AppColors.color3f4857,
-              fontFamily: AppFonts.primaryFontFamily,
-              fontWeight: FontWeight.bold,
-              //txtAlign: TextAlign.center,
+            Text(
+              screenHeading,
+              style: TextStyles.primary16Bold3f4857,
             ),
-            // const SizedBox(
-            //   width: 90,
-            // ),
-
             if (isSuffixicon == true)
               IconButton(
                   padding: EdgeInsets.fromLTRB(110, 0, 8, 0),

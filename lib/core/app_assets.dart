@@ -7,14 +7,22 @@ class AppAssets {
 
   static String imagesPath = "assets/images/";
 
-  //======================== Icons Path ======================
+  //======================== Logo Path ======================
+
+  static String logoImg = "${imagesPath}logo.png";
+  static String transparentLogoImg = "${imagesPath}transparent_logo.png";
+
+  //======================== Recommendations Icons Path ======================
+
   static String campIc = "${imagesPath}camp_icon.png";
   static String beachIc = "${imagesPath}beach_icon.png";
   static String entertainIc = "${imagesPath}entertaining_icon.png";
   static String horseRideIc = "${imagesPath}horse_icon.png";
   static String partyIc = "${imagesPath}party_icon.png";
   static String sportsIc = "${imagesPath}sport_icon.png";
-  //static String campIc = "${imagesPath}camp_icon.svg";
+
+  //======================== Main Screens Icons Path ======================
+
   static String activityIc = "${imagesPath}activity_icon.png";
   static String motorImg = "${imagesPath}big_img1.png";
   static String desertImg = "${imagesPath}big_img2.png";

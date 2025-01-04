@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ui_task1/core/app_assets.dart';
 import 'package:ui_task1/core/app_colors.dart';
-import 'package:ui_task1/widgets/customized_text.dart';
-
 import '../core/app_fonts.dart';
 
 class ChooseCard extends StatefulWidget {
@@ -58,12 +54,14 @@ class _ChooseCardState extends State<ChooseCard> {
                       const SizedBox(
                         height: 15,
                       ),
-                      CustomizedText(
-                          txt: widget.iconText,
-                          fontSize: 16,
-                          txtColor: txtColor,
-                          fontFamily: AppFonts.primaryFontFamily,
-                          fontWeight: FontWeight.bold)
+                      Text(
+                        widget.iconText,
+                        style: TextStyle(
+                            fontSize: 16,
+                            color: txtColor,
+                            fontFamily: AppFonts.primaryFontFamily,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ],
                   ),
                 ),

@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ui_task1/core/app_assets.dart';
-import 'package:ui_task1/core/app_colors.dart';
-import 'package:ui_task1/core/app_fonts.dart';
+import 'package:ui_task1/core/app_textstyles.dart';
 import 'package:ui_task1/widgets/contact_container.dart';
 import 'package:ui_task1/widgets/custom_app_bar.dart';
-import 'package:ui_task1/widgets/customized_text.dart';
-import 'package:ui_task1/widgets/mainButton.dart';
-
+import 'package:ui_task1/widgets/mainbutton.dart';
 import '../widgets/custom_text_form_field.dart';
 import '../widgets/random_text.dart';
 
@@ -37,12 +34,9 @@ class ContactScreen extends StatelessWidget {
                 const SizedBox(
                   height: 32,
                 ),
-                CustomizedText(
-                  txt: "كيف يمكننا مساعدتك؟",
-                  fontSize: 24,
-                  txtColor: AppColors.color0F1520,
-                  fontFamily: AppFonts.primaryFontFamily,
-                  fontWeight: FontWeight.w600,
+                Text(
+                  "كيف يمكننا مساعدتك؟",
+                  style: TextStyles.primary24SemiBold0F1520,
                 ),
                 const SizedBox(
                   height: 40,
@@ -74,12 +68,10 @@ class ContactScreen extends StatelessWidget {
                 const SizedBox(
                   height: 32,
                 ),
-                CustomizedText(
-                    txt: "تواصل معنا من خلال",
-                    fontSize: 16,
-                    txtColor: AppColors.color3f4857,
-                    fontFamily: AppFonts.primaryFontFamily,
-                    fontWeight: FontWeight.bold),
+                Text(
+                  "تواصل معنا من خلال",
+                  style: TextStyles.primary16Bold3f4857,
+                ),
                 const SizedBox(
                   height: 16,
                 ),

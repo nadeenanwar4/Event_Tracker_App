@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:ui_task1/core/app_colors.dart';
-import 'package:ui_task1/core/app_fonts.dart';
-import 'package:ui_task1/widgets/customized_text.dart';
+import 'package:ui_task1/core/app_textstyles.dart';
 
 class ContactContainer extends StatelessWidget {
   String iconPath;
@@ -24,12 +21,10 @@ class ContactContainer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            CustomizedText(
-                txt: "+966 123456789",
-                fontSize: 16,
-                txtColor: AppColors.color3f4857,
-                fontFamily: AppFonts.thirdFontFamily,
-                fontWeight: FontWeight.w500),
+            Text(
+              "+966 123456789",
+              style: TextStyles.third16Medium3f4857,
+            ),
             SizedBox(
               width: 8,
             ),

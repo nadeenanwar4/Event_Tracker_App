@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_pannable_rating_bar/flutter_pannable_rating_bar.dart';
 import 'package:ui_task1/core/app_assets.dart';
 import 'package:ui_task1/core/app_colors.dart';
-import 'package:ui_task1/core/app_fonts.dart';
+import 'package:ui_task1/core/app_textstyles.dart';
 import 'package:ui_task1/widgets/custom_app_bar.dart';
 import 'package:ui_task1/widgets/custom_text_form_field.dart';
-import 'package:ui_task1/widgets/customized_text.dart';
-import 'package:ui_task1/widgets/mainButton.dart';
+import 'package:ui_task1/widgets/mainbutton.dart';
 
 void main() {
   runApp(RatingScreen());
@@ -39,12 +38,10 @@ class _RatingScreenState extends State<RatingScreen> {
               const SizedBox(
                 height: 32,
               ),
-              CustomizedText(
-                  txt: "ما هو تقييمك لخدماتنا؟",
-                  fontSize: 16,
-                  txtColor: AppColors.color182335,
-                  fontFamily: AppFonts.secondryFontFamily,
-                  fontWeight: FontWeight.bold),
+              Text(
+                "ما هو تقييمك لخدماتنا؟",
+                style: TextStyles.secondary16Bold182335,
+              ),
               const SizedBox(
                 height: 16,
               ),
@@ -74,12 +71,10 @@ class _RatingScreenState extends State<RatingScreen> {
               const SizedBox(
                 height: 40,
               ),
-              CustomizedText(
-                  txt: "أكتب تعليق",
-                  fontSize: 16,
-                  txtColor: AppColors.color182335,
-                  fontFamily: AppFonts.secondryFontFamily,
-                  fontWeight: FontWeight.bold),
+              Text(
+                "أكتب تعليق",
+                style: TextStyles.secondary16Bold182335,
+              ),
               const SizedBox(
                 height: 12,
               ),
