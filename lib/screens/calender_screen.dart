@@ -55,17 +55,6 @@ class _CalendarScreenState extends State<CalendarScreen> {
                               onPressed: () {
                                 if (!isMonthView) toggleCalendarView();
                               },
-                              child: Text(
-                                "الشهر",
-                                style: TextStyle(
-                                  fontFamily: AppFonts.primaryFontFamily,
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.bold,
-                                  color: isMonthView
-                                      ? AppColors.color007aff
-                                      : AppColors.blackColor,
-                                ),
-                              ),
                               style: ElevatedButton.styleFrom(
                                   fixedSize: Size(139, 33),
                                   backgroundColor: AppColors.whiteColor,
@@ -77,6 +66,17 @@ class _CalendarScreenState extends State<CalendarScreen> {
                                           : AppColors.blackColor,
                                     ),
                                   )),
+                              child: Text(
+                                "الشهر",
+                                style: TextStyle(
+                                  fontFamily: AppFonts.primaryFontFamily,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.bold,
+                                  color: isMonthView
+                                      ? AppColors.color007aff
+                                      : AppColors.blackColor,
+                                ),
+                              ),
                             ),
                             SizedBox(
                               width: 12,
@@ -85,17 +85,6 @@ class _CalendarScreenState extends State<CalendarScreen> {
                               onPressed: () {
                                 if (isMonthView) toggleCalendarView();
                               },
-                              child: Text(
-                                "الاسبوع",
-                                style: TextStyle(
-                                  fontFamily: AppFonts.primaryFontFamily,
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.bold,
-                                  color: !isMonthView
-                                      ? AppColors.color007aff
-                                      : AppColors.blackColor,
-                                ),
-                              ),
                               style: ElevatedButton.styleFrom(
                                   fixedSize: Size(150, 33),
                                   backgroundColor: AppColors.whiteColor,
@@ -107,6 +96,17 @@ class _CalendarScreenState extends State<CalendarScreen> {
                                           : AppColors.blackColor,
                                     ),
                                   )),
+                              child: Text(
+                                "الاسبوع",
+                                style: TextStyle(
+                                  fontFamily: AppFonts.primaryFontFamily,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.bold,
+                                  color: !isMonthView
+                                      ? AppColors.color007aff
+                                      : AppColors.blackColor,
+                                ),
+                              ),
                             ),
                           ],
                         ),
