@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ui_task1/core/app_assets.dart';
+import 'package:ui_task1/core/app_textstyles.dart';
 
 void main() {
   runApp(onBoard1());
@@ -16,10 +18,9 @@ class onBoard1 extends StatelessWidget {
           width: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            //crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset(
-                "images/logo.png",
+                AppAssets.logoImg,
                 width: 159.97,
                 height: 65.23,
               ),
@@ -29,14 +30,9 @@ class onBoard1 extends StatelessWidget {
               Container(
                 width: 200,
                 height: 28,
-                child: const Text(
+                child: Text(
                   "!مغامراتك بانتظارك",
-                  style: TextStyle(
-                    fontFamily: 'Rubik',
-                    fontSize: 24,
-                    fontWeight: FontWeight.w600,
-                    color: Color(0xff3F4857),
-                  ),
+                  style: TextStyles.primary24SemiBold3f4857,
                 ),
               ),
             ],

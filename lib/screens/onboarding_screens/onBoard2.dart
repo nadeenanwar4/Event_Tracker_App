@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ui_task1/core/app_fonts.dart';
-import 'package:ui_task1/widgets/mainButton.dart';
+import 'package:ui_task1/core/app_assets.dart';
+import 'package:ui_task1/core/app_textstyles.dart';
+import 'package:ui_task1/widgets/mainbutton.dart';
 import 'package:video_player/video_player.dart';
-
-import '../widgets/textButton.dart';
 
 void main() => runApp(const VideoScreen());
 
@@ -47,33 +46,23 @@ class _VideoScreenState extends State<VideoScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Image.asset(
-                          "assets/images/transparent_logo.png",
+                          AppAssets.transparentLogoImg,
                           width: 159.97,
                           height: 65.23,
                         ),
                         const SizedBox(
                           height: 48,
                         ),
-                        const Text(
+                        Text(
                           "!مغامراتك بانتظارك",
-                          style: TextStyle(
-                            fontFamily: 'Rubik',
-                            fontSize: 32,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
+                          style: TextStyles.primary32BoldWhite,
                         ),
                         const SizedBox(
                           height: 24,
                         ),
-                        const Text(
+                        Text(
                           ".اكتشف الفعاليات الشيقة في أنحاء السعودية عبر تطبيقنا",
-                          style: TextStyle(
-                            fontFamily: 'Athelas',
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
+                          style: TextStyles.primary16BoldWhite,
                         ),
                         const SizedBox(
                           height: 24,
@@ -85,20 +74,13 @@ class _VideoScreenState extends State<VideoScreen> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            textButton(
-                              btnText: "تسجيل الدخول",
-                              btnColor: Colors.white,
-                              fontSize: 16,
-                              btnTextWeight: FontWeight.bold,
-                              fontFamily: AppFonts.thirdFontFamily,
-                              btnTextDecoration: TextDecoration.underline,
+                            Text(
+                              "تسجيل الدخول",
+                              style: TextStyles.third16BoldUnderlinedWhite,
                             ),
-                            textButton(
-                              btnText: "هل لديك حساب؟",
-                              btnColor: Colors.white,
-                              fontSize: 16,
-                              btnTextWeight: FontWeight.normal,
-                              fontFamily: AppFonts.thirdFontFamily,
+                            Text(
+                              "هل لديك حساب؟",
+                              style: TextStyles.third16NormalWhite,
                             ),
                           ],
                         ),

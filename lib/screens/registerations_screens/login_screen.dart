@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ui_task1/core/app_assets.dart';
 import 'package:ui_task1/core/app_colors.dart';
+import 'package:ui_task1/core/app_textstyles.dart';
 import 'package:ui_task1/widgets/custom_text_form_field.dart';
-import 'package:ui_task1/widgets/customized_text.dart';
-import 'package:ui_task1/widgets/mainButton.dart';
+import 'package:ui_task1/widgets/mainbutton.dart';
 import 'package:ui_task1/widgets/random_text.dart';
-import 'package:ui_task1/widgets/textButton.dart';
-
-import '../core/app_fonts.dart';
 
 void main() {
   runApp(SignInScreen());
@@ -32,21 +29,16 @@ class SignInScreen extends StatelessWidget {
                 //textDirection: TextDirection.rtl,
                 children: [
                   Image.asset(
-                    "images/logo.png",
+                    AppAssets.logoImg,
                     width: 100,
                     height: 40.77,
                   ),
                   const SizedBox(
                     height: 24,
                   ),
-                  const Text(
+                  Text(
                     "!مغامراتك بانتظارك",
-                    style: TextStyle(
-                      fontFamily: 'Rubik',
-                      fontSize: 24,
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xff3F4857),
-                    ),
+                    style: TextStyles.primary24SemiBold3f4857,
                   ),
                   const SizedBox(
                     height: 32,
@@ -62,13 +54,11 @@ class SignInScreen extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        CustomizedText(
-                            txt: "التسجيل بحساب جوجل",
-                            txtAlign: TextAlign.center,
-                            fontSize: 16,
-                            txtColor: AppColors.color797F8A,
-                            fontFamily: AppFonts.primaryFontFamily,
-                            fontWeight: FontWeight.bold),
+                        Text(
+                          "التسجيل بحساب جوجل",
+                          textAlign: TextAlign.center,
+                          style: TextStyles.primary16Bold797F8A,
+                        ),
                         const SizedBox(
                           width: 8,
                         ),
@@ -92,12 +82,10 @@ class SignInScreen extends StatelessWidget {
                           indent: 8,
                           endIndent: 8,
                         ),
-                        CustomizedText(
-                            txt: "أو",
-                            fontSize: 14,
-                            txtColor: AppColors.color3f4857,
-                            fontFamily: AppFonts.secondryFontFamily,
-                            fontWeight: FontWeight.normal),
+                        Text(
+                          "أو",
+                          style: TextStyles.secondary14Normal3f4857,
+                        ),
                         const Divider(
                           height: 44,
                           color: AppColors.colorE8E9EB,
@@ -133,12 +121,10 @@ class SignInScreen extends StatelessWidget {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 8),
-                        child: CustomizedText(
-                            txt: "هل نسيت كلمة المرور؟",
-                            fontSize: 12,
-                            txtColor: AppColors.color3f4857,
-                            fontFamily: AppFonts.secondryFontFamily,
-                            fontWeight: FontWeight.normal),
+                        child: Text(
+                          "هل نسيت كلمة المرور؟",
+                          style: TextStyles.secondary12Normal3f4857,
+                        ),
                       )
                     ],
                   ),
@@ -152,19 +138,13 @@ class SignInScreen extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      textButton(
-                        btnText: "إنشاء حساب",
-                        btnColor: AppColors.color3f4857,
-                        fontSize: 14,
-                        btnTextWeight: FontWeight.normal,
-                        fontFamily: AppFonts.primaryFontFamily,
+                      Text(
+                        "إنشاء حساب",
+                        style: TextStyles.primary14Normal3f4857,
                       ),
-                      textButton(
-                        btnText: "هل لديك حساب؟",
-                        btnColor: AppColors.color3f4857,
-                        fontSize: 14,
-                        btnTextWeight: FontWeight.normal,
-                        fontFamily: AppFonts.primaryFontFamily,
+                      Text(
+                        "هل لديك حساب؟",
+                        style: TextStyles.primary14Normal3f4857,
                       ),
                     ],
                   ),

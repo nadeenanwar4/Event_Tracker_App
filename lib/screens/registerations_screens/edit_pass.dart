@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ui_task1/core/app_fonts.dart';
-import 'package:ui_task1/widgets/customized_text.dart';
-import '../core/app_assets.dart';
-import '../core/app_colors.dart';
-import '../widgets/custom_text_form_field.dart';
-import '../widgets/mainButton.dart';
-import '../widgets/random_text.dart';
+import 'package:ui_task1/core/app_textstyles.dart';
+import '../../core/app_assets.dart';
+import '../../widgets/custom_text_form_field.dart';
+import '../../widgets/mainbutton.dart';
+import '../../widgets/random_text.dart';
 
 void main() {
   runApp(ForgotPassScreen());
@@ -27,24 +25,15 @@ class ForgotPassScreen extends StatelessWidget {
             const SizedBox(
               height: 32,
             ),
-            const Text(
-              "أدخل كلمة مرور جديدة",
-              style: TextStyle(
-                fontFamily: 'Rubik',
-                fontSize: 24,
-                fontWeight: FontWeight.w600,
-                color: Color(0xff3F4857),
-              ),
-            ),
+            Text("أدخل كلمة مرور جديدة",
+                style: TextStyles.primary24SemiBold3f4857),
             const SizedBox(
               height: 16,
             ),
-            CustomizedText(
-                txt: "أدخل بريدك الإلكتروني لإرسال رمز التأكيد",
-                fontSize: 16,
-                txtColor: AppColors.color3f4857,
-                fontFamily: AppFonts.primaryFontFamily,
-                fontWeight: FontWeight.normal),
+            Text(
+              "أدخل بريدك الإلكتروني لإرسال رمز التأكيد",
+              style: TextStyles.primary16Normal3f4857,
+            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [

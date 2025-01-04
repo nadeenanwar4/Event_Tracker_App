@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ui_task1/core/app_fonts.dart';
-import 'package:ui_task1/widgets/customized_text.dart';
+import 'package:ui_task1/core/app_textstyles.dart';
 import 'package:ui_task1/widgets/otp_frame.dart';
-import '../core/app_assets.dart';
-import '../core/app_colors.dart';
+import '../../core/app_assets.dart';
+import '../../core/app_colors.dart';
 
 void main() {
   runApp(OtpScreen());
@@ -35,24 +34,12 @@ class OtpScreen extends StatelessWidget {
             const SizedBox(
               height: 48,
             ),
-            const Text(
-              "تأكيد الحساب",
-              style: TextStyle(
-                fontFamily: 'Rubik',
-                fontSize: 24,
-                fontWeight: FontWeight.w600,
-                color: Color(0xff3F4857),
-              ),
-            ),
+            Text("تأكيد الحساب", style: TextStyles.primary24SemiBold3f4857),
             const SizedBox(
               height: 16,
             ),
-            CustomizedText(
-                txt: "سيتم ارسال رمز التأكيد علي رقم الجوال",
-                fontSize: 16,
-                txtColor: AppColors.color3f4857,
-                fontFamily: AppFonts.primaryFontFamily,
-                fontWeight: FontWeight.normal),
+            Text("سيتم ارسال رمز التأكيد علي رقم الجوال",
+                style: TextStyles.primary16Normal3f4857),
             const SizedBox(
               height: 40,
             ),
@@ -74,13 +61,9 @@ class OtpScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CustomizedText(
-                    txt: "إعادة الإرسال",
-                    txtAlign: TextAlign.center,
-                    fontSize: 16,
-                    txtColor: AppColors.blackColor,
-                    fontFamily: AppFonts.secondryFontFamily,
-                    fontWeight: FontWeight.normal),
+                Text("إعادة الإرسال",
+                    textAlign: TextAlign.center,
+                    style: TextStyles.secondary16NormalBlack),
                 const SizedBox(
                   width: 8,
                 ),
