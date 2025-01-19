@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 
 class mainButton extends StatelessWidget {
   String btnText;
+  VoidCallback onTap;
 
-  mainButton({required this.btnText, super.key});
+  mainButton({required this.onTap, required this.btnText, super.key});
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: onTap,
       style: ElevatedButton.styleFrom(
         minimumSize: const Size(361, 60),
         backgroundColor: const Color(0xff1A404D),
