@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_task1/core/app_colors.dart';
 import 'package:ui_task1/core/app_fonts.dart';
 import 'package:ui_task1/widgets/custom_app_bar.dart';
-import 'package:ui_task1/widgets/custom_list_tile.dart';
+import 'package:ui_task1/screens/navbar_screens/screens/profile_screens/widgets/custom_list_tile.dart';
 
 void main() {
   runApp(NotificationScreen());

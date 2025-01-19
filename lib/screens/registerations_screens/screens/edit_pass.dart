@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:ui_task1/core/app_textstyles.dart';
-import '../../core/app_assets.dart';
-import '../../widgets/custom_text_form_field.dart';
-import '../../widgets/mainbutton.dart';
-import '../../widgets/random_text.dart';
+import '../../../core/app_assets.dart';
+import '../../../widgets/custom_text_form_field.dart';
+import '../../../widgets/mainbutton.dart';
+import '../../../widgets/random_text.dart';
 
 void main() {
-  runApp(ForgotPassScreen());
+  runApp(EditPassScreen());
 }
 
-class ForgotPassScreen extends StatelessWidget {
-  ForgotPassScreen({super.key});
+class EditPassScreen extends StatelessWidget {
+  EditPassScreen({super.key});
 
   final passwordController = TextEditingController();
 
@@ -72,7 +72,12 @@ class ForgotPassScreen extends StatelessWidget {
             const SizedBox(
               height: 24,
             ),
-            mainButton(btnText: "تأكيد"),
+            mainButton(
+              btnText: "تأكيد",
+              onTap: () {
+                Navigator.pushNamed(context, "/login");
+              },
+            ),
           ]),
         ),
       ),

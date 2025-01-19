@@ -3,10 +3,10 @@ import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:ui_task1/core/app_assets.dart';
 import 'package:ui_task1/core/app_colors.dart';
 import 'package:ui_task1/core/app_fonts.dart';
-import 'package:ui_task1/screens/calender_screen.dart';
-import 'package:ui_task1/screens/events.dart';
-import 'package:ui_task1/screens/home.dart';
-import 'package:ui_task1/screens/profile_screen.dart';
+import 'package:ui_task1/screens/navbar_screens/screens/calender_screen.dart';
+import 'package:ui_task1/screens/navbar_screens/screens/events.dart';
+import 'package:ui_task1/screens/navbar_screens/screens/home.dart';
+import 'package:ui_task1/screens/navbar_screens/screens/profile_screens/profile_screen.dart';
 
 class BottomNavBar extends StatelessWidget {
   BottomNavBar({super.key});

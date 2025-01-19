@@ -10,6 +10,7 @@ class CustomizedListTile extends StatelessWidget {
   Widget? trailing;
   double radius;
   bool is3Lines;
+  VoidCallback? path;
   CustomizedListTile(
       {required this.title,
       required this.titleTxtStyle,
@@ -19,6 +20,8 @@ class CustomizedListTile extends StatelessWidget {
       this.trailing,
       this.radius = 0,
       this.is3Lines = false,
+      this.path,
+      // this.path = "",
       super.key});
 
   @override
@@ -26,6 +29,12 @@ class CustomizedListTile extends StatelessWidget {
     return Directionality(
         textDirection: TextDirection.rtl,
         child: ListTile(
+          onTap: path,
+          // () {
+          //   if (path != null) {
+          //     Navigator.pushNamed(context, path);
+          //   }
+          // },
           leading: leadIconPath.isNotEmpty
               ? Image.asset(
                   leadIconPath,

@@ -117,3 +117,14 @@ class Home extends StatelessWidget {
 //     );
 //   }
 // }
+
+
+
+// calendarBuilders: CalendarBuilders(
+//                       markerBuilder: (context, date, events) {
+//                         log("${calenderCubit.availableDaysWithTimes.length}from markerBuilder");
+//                         for (var element
+//                             in calenderCubit.availableDaysWithTimes) {
+//                           if (element.first.day == date.day &&
+//                               element.first.month == date.month &&
+// element.first.year == date.year

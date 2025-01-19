@@ -187,16 +187,26 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(
                 height: 32,
               ),
-              mainButton(btnText: "إنشاء حساب"),
+              mainButton(
+                btnText: "إنشاء حساب",
+                onTap: () {
+                  Navigator.pushNamed(context, "/mailotp");
+                },
+              ),
               const SizedBox(
                 height: 78,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    "تسجيل الدخول",
-                    style: TextStyles.primary14Normal3f4857,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, "/login");
+                    },
+                    child: Text(
+                      "تسجيل الدخول",
+                      style: TextStyles.primary14Normal3f4857,
+                    ),
                   ),
                   Text(
                     "هل لديك حساب؟",

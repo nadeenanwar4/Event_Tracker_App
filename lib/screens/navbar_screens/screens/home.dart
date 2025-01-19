@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ui_task1/core/app_assets.dart';
 import 'package:ui_task1/core/app_colors.dart';
 import 'package:ui_task1/core/app_textstyles.dart';
-import 'package:ui_task1/widgets/activity_card.dart';
-import 'package:ui_task1/widgets/fav_card.dart';
+import 'package:ui_task1/screens/navbar_screens/widgets/activity_card.dart';
+import 'package:ui_task1/screens/navbar_screens/widgets/fav_card.dart';
 
 void main() {
   runApp(Home());

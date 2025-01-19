@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_task1/core/app_colors.dart';
-import '../core/app_fonts.dart';
+import '../../../core/app_fonts.dart';
 
 class ChooseCard extends StatefulWidget {
   String iconPath;

@@ -17,6 +17,7 @@ class CustomizedAppBar extends StatelessWidget {
     return Container(
       color: AppColors.whiteColor,
       height: 105,
+      width: double.infinity,
       alignment: Alignment.bottomCenter,
       child: Padding(
         padding: (isPrefixicon! || isSuffixicon!) == true
