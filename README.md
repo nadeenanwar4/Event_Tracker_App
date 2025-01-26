@@ -1,4 +1,4 @@
-# ui_task1
+# Event_Tracker_App
 
 A new Flutter project.
 
